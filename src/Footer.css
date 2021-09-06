@@ -5,23 +5,35 @@
     width: 100%;
     background-color: #FFA5B0;
     color: #6A197D;
-    height: 10rem;
+    height: 15rem;
     border-top: solid 2px #E0DEDE;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: space-around;
 }
 .iconsArea{
-    display: grid;
-    justify-items: end;
-    margin-right: 2rem;
+    justify-self: end;
+    align-self: center;
+    margin-right: 1rem;
 }
 .footerIcon{
     height: 1.2rem;
+    width: 1.2rem;
     margin-left: 0.6rem;
-    background-image: linear-gradient(#ffffff, #e5c7ec);
+    background-image: linear-gradient(#ffffff, #ffffff);
     border-radius: 50%;
     padding: 0.5rem;
     cursor: pointer;
 }
 .footerIcon:hover{
-    background-image: linear-gradient(#ffffff, #f1dcf6);
     height: 1.25rem;
 }
+.footerTextArea{
+    margin-left: 1rem;
+    align-self: center;
+}
+.footerTextAreaCenter{
+    text-align: center;
+    align-self: center;
+}
+
