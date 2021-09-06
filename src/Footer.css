@@ -1,0 +1,27 @@
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFA5B0;
+    color: #6A197D;
+    height: 10rem;
+    border-top: solid 2px #E0DEDE;
+}
+.iconsArea{
+    display: grid;
+    justify-items: end;
+    margin-right: 2rem;
+}
+.footerIcon{
+    height: 1.2rem;
+    margin-left: 0.6rem;
+    background-image: linear-gradient(#ffffff, #e5c7ec);
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.footerIcon:hover{
+    background-image: linear-gradient(#ffffff, #f1dcf6);
+    height: 1.25rem;
+}
