@@ -4,10 +4,11 @@ import SectionRight from "./RightSection";
 
 
 
-function MainBody() {
+function MainBody(props) {
+    console.log(props.data)
     return (
             <main className="main">
-                <SectionLeft/>
+                <SectionLeft data={props.data}/>
                 <SectionRight/>
             </main>
     );
