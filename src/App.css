@@ -1,10 +1,35 @@
 body{
     margin: 0;
+
 }
 .header{
     display: flex;
     justify-content: space-between;
 }
+h1, h2{
+    color: #6A197D;
+}
 .icons{
     width:35px;
+}
+.userIcon{
+    margin-left: 60px;
+    margin-right: 40px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.sectionLeft{
+    width: 20%;
+    background-color: #e5c7ec;
+    height: 600px;
+
+}
+.sectionRight{
+    width: 25%;
+    height: 600px;
+
+    background-color: #e5c7ec;
+
 }
