@@ -7,16 +7,16 @@ export default function Footer(props) {
             <footer className="footer">
 
                 <div className="footerTextArea">
-                    <h2 className="footerText"> Company </h2>
+                    <h2 className="footerTextTitle"> Company </h2>
                     <p className="footerText"> Who are we</p>
                     <p className="footerText"> Find shop near you</p>
                     <p className="footerText"> Privacy policy</p>
                 </div>
 
                 <div className="footerTextAreaCenter">
-                    <h1 className="footerText"> Tanja & Choka SHOP</h1>
-                    <p className="footerText"> Koningin Astridlaan 185 </p>
-                    <p className="footerText">  9000 Gent</p>
+                    <h1 className="footerTextCenter"> Tanja & Choka SHOP</h1>
+                    <p className="footerTextCenter"> Koningin Astridlaan 185 </p>
+                    <p className="footerTextCenter">  9000 Gent</p>
                 </div>
 
                 <div className="iconsArea">

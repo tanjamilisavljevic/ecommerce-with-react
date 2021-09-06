@@ -1,4 +1,5 @@
 .footer {
+    font-family: 'Red Hat Display', sans-serif;
     position: relative;
     left: 0;
     bottom: 0;
@@ -20,13 +21,13 @@
     height: 1.2rem;
     width: 1.2rem;
     margin-left: 0.6rem;
-    background-image: linear-gradient(#ffffff, #ffffff);
+    background-color: white;
     border-radius: 50%;
     padding: 0.5rem;
     cursor: pointer;
 }
 .footerIcon:hover{
-    height: 1.25rem;
+    box-shadow:  1px 1px 10px #6A197D;
 }
 .footerTextArea{
     margin-left: 1rem;
@@ -35,5 +36,11 @@
 .footerTextAreaCenter{
     text-align: center;
     align-self: center;
+}
+.footerText{
+    cursor: pointer;
+}
+.footerText:hover{
+    text-decoration: underline;
 }
 
