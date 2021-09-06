@@ -1,0 +1,170 @@
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 165, 176, 0.5);
+    color: #6A197D;
+    height: 15rem;
+    border-top: solid 2px #E0DEDE;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: space-around;
+}
+
+.iconsArea {
+    justify-self: end;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.footerIcon {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 0.6rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.footerIcon:hover {
+    box-shadow: 1px 1px 10px #6A197D;
+}
+
+.footerTextArea {
+    margin-left: 1rem;
+    align-self: center;
+}
+
+.footerTextAreaCenter {
+    text-align: center;
+    align-self: center;
+}
+
+.footerText {
+    cursor: pointer;
+}
+
+.footerText:hover {
+    text-decoration: underline;
+}
+
+.footerTextCenterTitle {
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+#getInTouch {
+    text-align: end;
+    margin-bottom: 2rem;
+}
+
+.sectionLeftWrapper {
+    display: flex;
+    margin: 1rem;
+}
+
+.leftTitle {
+    color: #6A197D;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #F2BB7B;
+    min-width: 6rem;
+    font-size: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(360, 360, 360, 0.5);
+    padding: 0.5rem;
+    color: #F5F5F5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content:hover {
+    color: #F2BB7B;
+    background-color: #F5F5F5;
+}
+
+@media only screen and (max-width: 770px) {
+    .footerIcon {
+        height: 0.9rem;
+        width: 0.9rem;
+        padding: 0.3rem;
+    }
+
+    .footerTextCenterTitle {
+        font-weight: bolder;
+        letter-spacing: 1px;
+        font-size: large;
+    }
+
+    .footerTitle {
+        font-size: small;
+    }
+
+    .footerText {
+        font-size: small;
+    }
+
+    .sectionLeft {
+        width: 20%;
+    }
+
+    .leftTitle {
+        font-size: small;
+    }
+
+    .dropdown-content {
+        min-width: 3rem;
+        font-size: 0.5rem;
+        padding: 0.05rem;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .iconsWrap {
+        display: flex;
+        flex-flow: column;
+        justify-items: end;
+    }
+
+    .iconsArea {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .footerTextAreaCenter {
+        display: none;
+    }
+
+    .footer {;
+        height: 8rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .iconsWrap {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .footerText {
+        font-size: 8px;
+    }
+
+    .footerTitle {
+        font-size: 10px;
+    }
+}
