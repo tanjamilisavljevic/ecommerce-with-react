@@ -43,4 +43,61 @@
 .footerText:hover{
     text-decoration: underline;
 }
+.footerTextCenterTitle{
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+#getInTouch{
+    text-align: end;
+    margin-bottom: 2rem;
+}
 
+@media only screen and (max-width: 770px) {
+    .footerIcon{
+        height: 0.9rem;
+        width:  0.9rem;
+        padding: 0.3rem;
+    }
+    .footerTextCenterTitle{
+        font-weight: bolder;
+        letter-spacing: 1px;
+        font-size: large;
+    }
+    .footerTitle{
+        font-size: small;
+    }
+    .footerText{
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 590px)
+{
+    .iconsWrap{
+        display: flex;
+        flex-flow: column;
+        justify-items: end;
+    }
+    .iconsArea{
+        margin-right: 1rem;
+    }
+}
+@media only screen and (max-width: 450px){
+    .footerTextAreaCenter{
+        display: none;
+    }
+    .footer {;
+        height: 8rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .iconsWrap{
+        display: flex;
+        flex-flow: row;
+    }
+    .footerText{
+        font-size: 8px;
+    }
+    .footerTitle{
+        font-size: 10px;
+    }
+}
