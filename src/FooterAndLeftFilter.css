@@ -3,7 +3,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background: rgba(255,165,176,0.5);
+    background: rgba(255, 165, 176, 0.5);
     color: #6A197D;
     height: 15rem;
     border-top: solid 2px #E0DEDE;
@@ -11,12 +11,14 @@
     grid-template-columns: 20% 60% 20%;
     justify-content: space-around;
 }
-.iconsArea{
+
+.iconsArea {
     justify-self: end;
     align-self: center;
     margin-right: 1rem;
 }
-.footerIcon{
+
+.footerIcon {
     height: 1.2rem;
     width: 1.2rem;
     margin-left: 0.6rem;
@@ -25,103 +27,144 @@
     padding: 0.5rem;
     cursor: pointer;
 }
-.footerIcon:hover{
-    box-shadow:  1px 1px 10px #6A197D;
+
+.footerIcon:hover {
+    box-shadow: 1px 1px 10px #6A197D;
 }
-.footerTextArea{
+
+.footerTextArea {
     margin-left: 1rem;
     align-self: center;
 }
-.footerTextAreaCenter{
+
+.footerTextAreaCenter {
     text-align: center;
     align-self: center;
 }
-.footerText{
+
+.footerText {
     cursor: pointer;
 }
-.footerText:hover{
+
+.footerText:hover {
     text-decoration: underline;
 }
-.footerTextCenterTitle{
+
+.footerTextCenterTitle {
     font-weight: bolder;
     letter-spacing: 5px;
 }
-#getInTouch{
+
+#getInTouch {
     text-align: end;
     margin-bottom: 2rem;
 }
-.sectionLeftWrapper{
+
+.sectionLeftWrapper {
     display: flex;
     margin: 1rem;
 }
-.leftTitle{
+
+.leftTitle {
     color: #6A197D;
     font-size: medium;
+    font-weight: bold;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 .dropdown-content {
     display: none;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    background-color: #F2BB7B;
+    min-width: 6rem;
+    font-size: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(360, 360, 360, 0.5);
+    padding: 0.5rem;
+    color: #F5F5F5;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    cursor: pointer;
 }
 
-
+.dropdown-content:hover {
+    color: #F2BB7B;
+    background-color: #F5F5F5;
+}
 
 @media only screen and (max-width: 770px) {
-    .footerIcon{
+    .footerIcon {
         height: 0.9rem;
-        width:  0.9rem;
+        width: 0.9rem;
         padding: 0.3rem;
     }
-    .footerTextCenterTitle{
+
+    .footerTextCenterTitle {
         font-weight: bolder;
         letter-spacing: 1px;
         font-size: large;
     }
-    .footerTitle{
+
+    .footerTitle {
         font-size: small;
     }
-    .footerText{
+
+    .footerText {
         font-size: small;
+    }
+
+    .sectionLeft {
+        width: 20%;
+    }
+
+    .leftTitle {
+        font-size: small;
+    }
+
+    .dropdown-content {
+        min-width: 3rem;
+        font-size: 0.5rem;
+        padding: 0.05rem;
     }
 }
-@media only screen and (max-width: 590px)
-{
-    .iconsWrap{
+
+@media only screen and (max-width: 590px) {
+    .iconsWrap {
         display: flex;
         flex-flow: column;
         justify-items: end;
     }
-    .iconsArea{
+
+    .iconsArea {
         margin-right: 1rem;
     }
 }
-@media only screen and (max-width: 450px){
-    .footerTextAreaCenter{
+
+@media only screen and (max-width: 450px) {
+    .footerTextAreaCenter {
         display: none;
     }
+
     .footer {;
         height: 8rem;
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    .iconsWrap{
+
+    .iconsWrap {
         display: flex;
         flex-flow: row;
     }
-    .footerText{
+
+    .footerText {
         font-size: 8px;
     }
-    .footerTitle{
+
+    .footerTitle {
         font-size: 10px;
     }
 }
