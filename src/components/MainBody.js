@@ -1,14 +1,17 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
 import SectionLeft from "./LeftFilter";
 import SectionRight from "./RightSection";
 
 
 
-function MainBody() {
+function MainBody(props) {
+    console.log(props.data)
+
     return (
             <main className="main">
-                <SectionLeft/>
-                <SectionRight/>
+                <SectionLeft data={props} />
+                <SectionRight />
             </main>
     );
 
