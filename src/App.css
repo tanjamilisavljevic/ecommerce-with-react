@@ -6,3 +6,10 @@
     background-color: #FFA5B0;
     color: #6A197D;
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    width:35px;
+}
