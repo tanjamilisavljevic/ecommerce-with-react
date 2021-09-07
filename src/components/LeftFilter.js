@@ -7,9 +7,10 @@ function SectionLeft() {
     useEffect(() => {
         axios.get('https://fakestoreapi.com/products')
             .then(response => {
-                console.log(response)
+                console.log(response.data)
                 // response.json()
                 setProducts(response.data)
+                // console.log(products)
             })
             .catch(error => {
                 console.log(error)
@@ -17,7 +18,9 @@ function SectionLeft() {
     }, [])
 
     function clickHandlerLowToHigh() {
-        // console.log({products.data});
+       let priceMorethan100 = products.filter((each,index)=>each.price > 100);
+        console.log(priceMorethan100);
+        return priceMorethan100;
     }
 
     function clickHandlerHighToLow() {
