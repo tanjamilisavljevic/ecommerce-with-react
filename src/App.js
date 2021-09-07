@@ -10,8 +10,7 @@ function App() {
     let [products, setProducts] =useState([
         {   id: 1,
             title: "Book1",
-            price:10,
-
+            price:10
         },
         {   id: 2,
             title: "Book2",
