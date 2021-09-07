@@ -1,35 +1,48 @@
-body{
+body {
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
 }
-h1, h2{
+
+h1, h2 {
     color: #6A197D;
 }
-.icons{
-    width:35px;
+
+.icons {
+    width: 35px;
 }
-.userIcon{
+
+.userIcon {
     margin-left: 60px;
     margin-right: 40px;
 }
-.main{
+
+.main {
     display: flex;
     /*justify-content: space-between;*/
 }
-.sectionLeft{
+
+.sectionLeft {
     width: 20%;
     background-color: #e5c7ec;
     height: 600px;
-
 }
-.sectionRight{
+
+.sectionRight {
     width: 25%;
     height: 600px;
-
     background-color: #51225c;
+}
 
+.cardWrapper {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    flex-grow: 4;
 }
