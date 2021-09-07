@@ -10,7 +10,7 @@ function App() {
 
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        axios.get('https://fakestoreapi.com/products%27%27)
+        axios.get('https://fakestoreapi.com/products%27%27')
             .then(response => {
                 setProducts(response.data)
             })
