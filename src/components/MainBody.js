@@ -8,10 +8,10 @@ function MainBody(props) {
     console.log(props.data)
     return (
             <main className="main">
-                <SectionLeft/>
+                <SectionLeft data={props}/>
 
 
-                <SectionRight/>
+                <SectionRight data={props}/>
             </main>
     );
 
