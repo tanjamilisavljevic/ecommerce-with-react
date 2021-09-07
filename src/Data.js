@@ -1,7 +1,7 @@
 const data = {
     products:[
         {   id: 1,
-            title: "Aichurok's Story",
+            title: "Choka's Story",
             price:10,
             imgFile: './book (1).jpg'
         },
