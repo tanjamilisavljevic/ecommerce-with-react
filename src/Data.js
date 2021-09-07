@@ -16,7 +16,7 @@ const data = {
             imgFile: './book (3).jpg'
         },
         {   id: 4,
-            title: "Claude's Story",
+            title: "Kadir's Story",
             price:10,
             imgFile: './book (1).jpg'
         },
