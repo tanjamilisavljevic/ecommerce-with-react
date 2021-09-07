@@ -1,21 +1,29 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+import axios from "axios";
 import '../FooterAndLeftFilter.css';
-import useFetch from "react-fetch-hook";
-
 
 function SectionLeft() {
-    const {isLoading, error, data} =
-        useFetch('https://fakestoreapi.com/products');
-
-    if (isLoading) return "Loading...";
-    if (error) return "Error!";
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        axios.get('https://fakestoreapi.com/products')
+            .then(response => {
+                console.log(response)
+                // response.json()
+                setProducts(response.data)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }, [])
 
     function clickHandlerLowToHigh() {
-        console.log(...data);
+        // console.log({products.data});
     }
+
     function clickHandlerHighToLow() {
-        console.log(...data)
+        console.log('hi')
     }
+
     return (
         <section className="sectionLeft">
             <div className="sectionLeftWrapper">
@@ -27,6 +35,7 @@ function SectionLeft() {
                     <div className="dropdown-content">
                         <p onClick={clickHandlerHighToLow}>Price high to low</p>
                     </div>
+                    {/*{products.map(product => <p> product.title </p> )}*/}
                 </div>
             </div>
         </section>
