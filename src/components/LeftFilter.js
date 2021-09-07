@@ -1,15 +1,21 @@
 import React from 'react'
 import '../FooterAndLeftFilter.css';
+import useFetch from "react-fetch-hook";
 
-
-function clickHandlerLowToHigh() {
- console.log({data[1].title});
-}
-function clickHandlerHighToLow() {
-console.log('hi')
-}
 
 function SectionLeft() {
+    const {isLoading, error, data} =
+        useFetch('https://fakestoreapi.com/products');
+
+    if (isLoading) return "Loading...";
+    if (error) return "Error!";
+
+    function clickHandlerLowToHigh() {
+        console.log(...data);
+    }
+    function clickHandlerHighToLow() {
+        console.log(...data)
+    }
     return (
         <section className="sectionLeft">
             <div className="sectionLeftWrapper">

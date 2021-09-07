@@ -53,6 +53,7 @@
 .footerTextCenterTitle {
     font-weight: bolder;
     letter-spacing: 5px;
+    cursor: default;
 }
 
 #getInTouch {
@@ -95,7 +96,13 @@
     color: #F2BB7B;
     background-color: #F5F5F5;
 }
-
+#address{
+    text-decoration: none;
+    cursor: default;
+}
+.footerTitle{
+    cursor: default;
+}
 @media only screen and (max-width: 770px) {
     .footerIcon {
         height: 0.9rem;
