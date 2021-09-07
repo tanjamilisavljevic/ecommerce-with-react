@@ -8,7 +8,9 @@ function MainBody(props) {
     console.log(props.data)
     return (
             <main className="main">
-                <SectionLeft data={props.data}/>
+                <SectionLeft/>
+
+
                 <SectionRight/>
             </main>
     );
