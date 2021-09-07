@@ -20,7 +20,7 @@ function MainBody(props) {
                 </div>
 
             ))}
-            <SectionRight data={props}/>
+            <SectionRight data={props} cartItems={props.cartItems}/>
         </main>
     );
 

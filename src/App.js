@@ -7,12 +7,17 @@ import data from "./Data"
 
 
 function App() {
-    console.log(data.products)
+    console.log(data.products);
+    const products = data.products
+    const [cartItems,setCartItems] = useState([]);
 
+    const onAdd= (products)=>{
+
+    }
     return (
         <>
             <Header/>
-            <MainBody data={data.products}/>
+            <MainBody data={products} cartItems={cartItems}/>
             <Footer />
         </>
     );
