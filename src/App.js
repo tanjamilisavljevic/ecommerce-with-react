@@ -9,22 +9,22 @@ import axios from "axios";
 function App() {
     let [products, setProducts] =useState([
         {   id: 1,
-            title: "Book1",
+            title: "Book 1",
             price:10,
 
         },
         {   id: 2,
-            title: "Book2",
+            title: "Book 2",
             price:11,
 
         },
         {   id: 3,
-            title: "Book3",
+            title: "Book 3",
             price:12,
 
         },
         {   id: 4,
-            title: "Book4",
+            title: "Book 4",
             price:10,
 
         },
