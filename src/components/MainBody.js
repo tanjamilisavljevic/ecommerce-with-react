@@ -3,14 +3,15 @@ import SectionLeft from "./LeftFilter";
 import SectionRight from "./RightSection";
 
 
-function MainBody(props) {
+function MainBody( {data, onAdd,cartItems, onRemove} ) {
+
 
     return (
         <main className="main">
 
-            <SectionLeft data={props}/>
+            <SectionLeft data={data}/>
             <div className="cardWrapper">
-                {props.data.map((prop, index) => (
+                {data.map((prop, index) => (
                     <div key={index} className="card">
                         <img src={prop.imgFile} className="productPictures"/>
                         <h6 className="productTitle">{prop.title}</h6>
@@ -19,7 +20,7 @@ function MainBody(props) {
                     </div>
                 ))}
             </div>
-            <SectionRight data={props} cartItems={props.cartItems}/>
+            <SectionRight  data={data} cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
         </main>
     );
 
