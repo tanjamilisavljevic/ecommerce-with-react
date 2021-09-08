@@ -1,37 +1,23 @@
 import React, {useEffect, useState} from 'react'
-import SectionLeft from "./LeftFilter";
 import SectionRight from "./RightSection";
 
 
-function MainBody( {data, onAdd,cartItems, onRemove} ) {
+function MainBody({data, onAdd, cartItems, onRemove}) {
 
     const [order, setOrder] = useState('');
 
-    useEffect(()=>{
-        data.sort((a,b) => (a.price > b.price)? 1 : -1);
-        setOrder ("up");
-    },[])
+    useEffect(() => {
+        data.sort((a, b) => (a.price > b.price) ? 1 : -1);
+        setOrder("up");
+    }, [])
 
-    useEffect(()=>{
-        if (order === "up"){
-            data.sort((a,b) => (a.price < b.price)? 1 : -1);
-
+    useEffect(() => {
+        if (order === "up") {
+            data.sort((a, b) => (a.price < b.price) ? 1 : -1);
+        } else {
+            data.sort((a, b) => (a.price > b.price) ? 1 : -1);
         }
-        else {
-            data.sort((a,b) => (a.price > b.price)? 1 : -1);
-
-        }
-    },[order])
-
-    // function sortHighToLow(){
-    //     console.log('low')
-    //     return data.sort((a,b) => (a.price < b.price)? 1 : -1);
-    // }
-    // function sortLowToHigh(){
-    //     console.log('hi')
-    //     console.log(data)
-    //     return data.sort((a,b) => (a.price > b.price)? 1 : -1);
-    // }
+    }, [order])
 
 
     return (
@@ -43,11 +29,11 @@ function MainBody( {data, onAdd,cartItems, onRemove} ) {
                         <img src={product.imgFile} className="productPictures"/>
                         <h6 className="productTitle">{product.title}</h6>
                         <p className="productPrice"> {product.price}$ </p>
-                        <button className='addToCart'> Add to Cart</button>
+                        <button onClick={() => onAdd(product)} className='addToCart'> Add to Cart</button>
                     </div>
                 ))}
             </div>
-            <section className="sectionLeft" >
+            <section className="sectionLeft">
                 <div className="dropdown">
                     <span className="leftTitle">Filter by</span>
                     <div className="dropdown-content">
@@ -58,7 +44,7 @@ function MainBody( {data, onAdd,cartItems, onRemove} ) {
                     </div>
                 </div>
             </section>
-            <SectionRight  data={data} cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
+            <SectionRight data={data} cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
         </main>
     );
 
