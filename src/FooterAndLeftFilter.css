@@ -19,8 +19,8 @@
 }
 
 .footerIcon {
-    height: 1.2rem;
-    width: 1.2rem;
+    height:3rem;
+    width: 3rem;
     margin-left: 0.6rem;
     background-color: white;
     border-radius: 50%;
@@ -70,46 +70,51 @@
     color: #6A197D;
     font-size: medium;
     font-weight: bold;
+    cursor: pointer;
     margin-left: 1rem;
 }
 
 .dropdown {
+    margin-top: 2rem;
     position: relative;
     display: inline-block;
 }
 
 .dropdown-content {
     display: none;
-    background-color: #bcd0d9;
-    min-width: 6rem;
     font-size: 1rem;
     font-weight: bold;
-    box-shadow: 0 8px 16px 0 rgba(360, 360, 360, 0.5);
-    padding: 0.5rem;
-    color: #F5F5F5;
+    padding: 0.2rem;
+    color: #6A197D;
+    margin-top: 0.5rem;
 }
 
+hr{
+    margin: 0;
+}
 .dropdown:hover .dropdown-content {
     display: block;
     cursor: pointer;
 }
 
 .dropdown-content:hover {
-    color: #bcd0d9;
-    background-color: #F5F5F5;
+  text-decoration: underline;
 }
+
 #address{
     text-decoration: none;
     cursor: default;
 }
+
 .footerTitle{
     cursor: default;
 }
+
 @media only screen and (max-width: 770px) {
     .footerIcon {
-        height: 0.9rem;
-        width: 0.9rem;
-        padding: 0.3rem;
+        height: 2rem;
+        width: 2rem;
+        padding: 0.5rem;
     }
 
     .footerTextCenterTitle {

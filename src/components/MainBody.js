@@ -22,7 +22,18 @@ function MainBody({data, onAdd, cartItems, onRemove}) {
 
     return (
         <main className="main">
-
+            <section className="sectionLeft">
+                <div className="dropdown" id="filter">
+                    <span className="leftTitle">Filter by</span>
+                    <div className="dropdown-content">
+                        <p onClick={() => setOrder("up")}>Price low to high</p>
+                    </div>
+                    <hr className="dropdown-content"/>
+                    <div className="dropdown-content">
+                        <p onClick={() => setOrder("down")}>Price high to low</p>
+                    </div>
+                </div>
+            </section>
             <div className="cardWrapper">
                 {data.map((product, index) => (
                     <div key={index} className="card">
@@ -33,17 +44,6 @@ function MainBody({data, onAdd, cartItems, onRemove}) {
                     </div>
                 ))}
             </div>
-            <section className="sectionLeft">
-                <div className="dropdown">
-                    <span className="leftTitle">Filter by</span>
-                    <div className="dropdown-content">
-                        <p onClick={() => setOrder("up")}>Price low to high</p>
-                    </div>
-                    <div className="dropdown-content">
-                        <p onClick={() => setOrder("down")}>Price high to low</p>
-                    </div>
-                </div>
-            </section>
             <SectionRight data={data} cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
         </main>
     );
