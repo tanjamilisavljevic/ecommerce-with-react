@@ -33,9 +33,15 @@ function App() {
 
         }
     }
+    function showCart(){
+        document.querySelector(".sectionRight").classList.add('active');
+    }
+    function closeCart(){
+        document.querySelector(".sectionRight").classList.remove('active');
+    }
     return (
         <>
-            <Header countCartItems={cartItems.length}/>
+            <Header countCartItems={cartItems.length} showCart={showCart} closeCart={closeCart}/>
             <MainBody onAdd={onAdd} onRemove={onRemove} data={products} cartItems={cartItems}/>
             <Footer />
         </>
