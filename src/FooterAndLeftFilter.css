@@ -80,9 +80,10 @@
 
 .dropdown-content {
     display: none;
-    background-color: #F2BB7B;
+    background-color: #bcd0d9;
     min-width: 6rem;
     font-size: 1rem;
+    font-weight: bold;
     box-shadow: 0 8px 16px 0 rgba(360, 360, 360, 0.5);
     padding: 0.5rem;
     color: #F5F5F5;
@@ -94,7 +95,7 @@
 }
 
 .dropdown-content:hover {
-    color: #F2BB7B;
+    color: #bcd0d9;
     background-color: #F5F5F5;
 }
 #address{
