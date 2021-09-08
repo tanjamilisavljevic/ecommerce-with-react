@@ -70,7 +70,6 @@ h1, h2 {
     padding: 10px;
     width: 15vw;
     display: flex;
-    flex-grow: 2;
     align-items: center;
     background-image: linear-gradient(#E0DEDE, #ffffff);
 }
@@ -102,7 +101,7 @@ h1, h2 {
     border-radius: 16px;
     font-size: 15px;
     font-weight: bold;
-    background-image: linear-gradient(#E0DEDE, #8cb4b4);
+    background-image: linear-gradient(#E0DEDE, #b0e2e2);
     color: #6A197D;
     border: none;
     padding: 4px 8px;
@@ -110,7 +109,7 @@ h1, h2 {
 }
 .addToCart:hover{
     background-image: linear-gradient(#6A197D, #7d418d);
-    color: #bcd0d9;
+    color: #b0e2e2;
 }
 .add:active{
     outline:none;

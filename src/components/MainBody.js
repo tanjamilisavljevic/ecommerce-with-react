@@ -24,7 +24,9 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
         <main className="main">
             <section className="sectionLeft">
                 <div className="dropdown" id="filter">
-                    <span className="leftTitle">Filter by</span>
+                    <span className="leftTitle">Sort</span>
+                    <span className="leftTitle" id="dash">-</span>
+                    <hr/>
                     <div className="dropdown-content">
                         <p onClick={() => setOrder("up")}>Price low to high</p>
                     </div>
