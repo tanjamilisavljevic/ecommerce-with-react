@@ -14,8 +14,8 @@ function MainBody(props) {
                 {props.data.map((prop, index) => (
                     <div key={index} className="card">
                         <img src={prop.imgFile} className="productPictures"/>
-                        <h6>{prop.title}</h6>
-                        <p> {prop.price}$ </p>
+                        <h6 className="productTitle">{prop.title}</h6>
+                        <p className="productPrice"> {prop.price}$ </p>
                         <button className='addToCart'> Add to Cart</button>
                     </div>
                 ))}

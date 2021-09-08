@@ -46,7 +46,7 @@ h1, h2 {
 }
 .card {
     width: 15vw;
-    height: 40vh;
+    height: 50vh;
     padding: 2rem;
     display: flex;
     flex-grow: 2;
@@ -54,6 +54,34 @@ h1, h2 {
     background-image: linear-gradient(#E0DEDE, #ffffff);
 }
 .productPictures{
-    width: 8vw;
-    height: 25vh;
+    height: 30vh;
+    cursor: pointer;
+}
+
+.productTitle{
+    font-size: small;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #6A197D;
+    cursor: pointer;
+}
+.productTitle:hover{
+    text-decoration: underline;
+}
+.productPrice{
+    font-weight: bold;
+    color: #6A197D;
+}
+.addToCart{
+    border-radius: 16px;
+    width: 8rem;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(#E0DEDE, #8cb4b4);
+    color: #6A197D;
+}
+.addToCart:hover{
+    background-image: linear-gradient(#6A197D, #7d418d);
+    color: #bcd0d9;
 }
