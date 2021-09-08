@@ -16,7 +16,7 @@ function MainBody( {data, onAdd,cartItems, onRemove} ) {
                         <img src={prop.imgFile} className="productPictures"/>
                         <h6 className="productTitle">{prop.title}</h6>
                         <p className="productPrice"> {prop.price}$ </p>
-                        <button className='addToCart'> Add to Cart</button>
+                        <button onClick={()=>onAdd(prop)} className='addToCart'> Add to Cart</button>
                     </div>
                 ))}
             </div>
