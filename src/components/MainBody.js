@@ -22,17 +22,6 @@ function MainBody({data, onAdd, cartItems, onRemove}) {
 
     return (
         <main className="main">
-
-            <div className="cardWrapper">
-                {data.map((product, index) => (
-                    <div key={index} className="card">
-                        <img src={product.imgFile} className="productPictures"/>
-                        <h6 className="productTitle">{product.title}</h6>
-                        <p className="productPrice"> {product.price}$ </p>
-                        <button onClick={() => onAdd(product)} className='addToCart'> Add to Cart</button>
-                    </div>
-                ))}
-            </div>
             <section className="sectionLeft">
                 <div className="dropdown">
                     <span className="leftTitle">Filter by</span>
@@ -44,6 +33,16 @@ function MainBody({data, onAdd, cartItems, onRemove}) {
                     </div>
                 </div>
             </section>
+            <div className="cardWrapper">
+                {data.map((product, index) => (
+                    <div key={index} className="card">
+                        <img src={product.imgFile} className="productPictures"/>
+                        <h6 className="productTitle">{product.title}</h6>
+                        <p className="productPrice"> {product.price}$ </p>
+                        <button onClick={() => onAdd(product)} className='addToCart'> Add to Cart</button>
+                    </div>
+                ))}
+            </div>
             <SectionRight data={data} cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
         </main>
     );
