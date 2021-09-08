@@ -13,8 +13,8 @@ function MainBody(props) {
             <div className="cardWrapper">
                 {props.data.map((prop, index) => (
                     <div key={index} className="card">
-                        <h4>{prop.title}</h4>
-                        <img src={prop.imgFile} style={{height: 100 + 'px', width: 75 + 'px'}}/>
+                        <img src={prop.imgFile} className="productPictures"/>
+                        <h6>{prop.title}</h6>
                         <p> {prop.price}$ </p>
                         <button className='addToCart'> Add to Cart</button>
                     </div>

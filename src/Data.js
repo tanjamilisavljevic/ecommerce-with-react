@@ -8,7 +8,7 @@ const data = {
         {   id: 2,
             title: "Anna's Story",
             price:11,
-            imgFile: './book (6).jpg'
+            imgFile: './book (2).jpg'
         },
         {   id: 3,
             title: "Basile's Story",
@@ -18,7 +18,7 @@ const data = {
         {   id: 4,
             title: "Kadir's Story",
             price:10,
-            imgFile: './book (1).jpg'
+            imgFile: './book (4).jpg'
         },
         {   id:5 ,
             title: "Dennis' Story",
