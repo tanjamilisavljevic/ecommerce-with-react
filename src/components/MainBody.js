@@ -23,11 +23,13 @@ function MainBody({data, onAdd, cartItems, onRemove}) {
     return (
         <main className="main">
             <section className="sectionLeft">
-                <div className="dropdown">
+                <div className="dropdown" id="filter">
                     <span className="leftTitle">Filter by</span>
+                    <span className="leftTitleRight">-</span>
                     <div className="dropdown-content">
                         <p onClick={() => setOrder("up")}>Price low to high</p>
                     </div>
+                    <hr className="dropdown-content"/>
                     <div className="dropdown-content">
                         <p onClick={() => setOrder("down")}>Price high to low</p>
                     </div>
