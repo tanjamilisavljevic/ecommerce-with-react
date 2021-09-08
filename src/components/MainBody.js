@@ -4,7 +4,6 @@ import SectionRight from "./RightSection";
 
 
 function MainBody(props) {
-    console.log(props.data)
 
     return (
         <main className="main">

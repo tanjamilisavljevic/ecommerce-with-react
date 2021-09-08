@@ -28,9 +28,9 @@ h1, h2 {
 }
 
 .sectionLeft {
-    width: 20%;
+    width: 20vw;
     background-color: #e5c7ec;
-    height: 600px;
+    height: 100vh;
 }
 
 .sectionRight {
@@ -42,7 +42,7 @@ h1, h2 {
 .cardWrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .card {
     width: 15vw;
