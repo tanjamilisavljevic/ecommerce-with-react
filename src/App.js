@@ -33,16 +33,18 @@ function App() {
 
         }
     }
-    function showCart(){
-        document.querySelector(".sectionRight").classList.add('active');
+    let toggleCart =() =>{
+        document.querySelector(".sectionRight").classList.toggle("active");
     }
-    function closeCart(){
-        document.querySelector(".sectionRight").classList.remove('active');
+    let leaveCart =() =>{
+        document.querySelector(".sectionRight").classList.remove("active");
+
     }
+
     return (
         <>
-            <Header countCartItems={cartItems.length} showCart={showCart} closeCart={closeCart}/>
-            <MainBody onAdd={onAdd} onRemove={onRemove} data={products} cartItems={cartItems}/>
+            <Header countCartItems={cartItems.length} toggleCart={toggleCart} />
+            <MainBody onAdd={onAdd} onRemove={onRemove} data={products} cartItems={cartItems} leaveCart={leaveCart}/>
             <Footer />
         </>
     );

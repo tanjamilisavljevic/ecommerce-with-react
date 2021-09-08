@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import SectionRight from "./RightSection";
 
 
-function MainBody({data, onAdd, cartItems, onRemove}) {
+function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
 
     const [order, setOrder] = useState('');
 
@@ -44,7 +44,7 @@ function MainBody({data, onAdd, cartItems, onRemove}) {
                     </div>
                 ))}
             </div>
-            <SectionRight data={data} cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
+            <SectionRight data={data} cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}  leaveCart={leaveCart}/>
         </main>
     );
 

@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-function SectionRight({onAdd,cartItems,onRemove}) {
+function SectionRight({onAdd,cartItems,onRemove, leaveCart}) {
     const itemsPrice = cartItems.reduce((a,c) =>a + c.price * c.qty,0 );
     const taxPrice = itemsPrice * 0.14;
     const shippingPrice = itemsPrice > 2000 ? 0: 50;
     const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
     return (
-        <section className="sectionRight">
+        <section onMouseLeave={leaveCart} className="sectionRight">
             <h3>Cart Items</h3>
             <div>
                 {cartItems.length===0 && <div>Cart is empty</div>}
