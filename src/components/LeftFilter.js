@@ -1,18 +1,19 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import '../FooterAndLeftFilter.css';
 import '../App.css';
 
 export default function SectionLeft(props) {
-    const [products, setProducts] = useState([]);
+
+    let [products, setProducts] = useState([]);
 
     function sortLowToHigh() {
-        props.data.data.sort(function (a, b) {
+        setProducts = props.data.data.sort(function (a, b) {
             return a.price - b.price;
         });
     }
 
         function sortHighToLow() {
-            props.data.data.sort(function (a, b) {
+            setProducts = props.data.data.sort(function (a, b) {
                 return b.price - a.price;
             });
         }
