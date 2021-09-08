@@ -8,6 +8,8 @@ import data from "./Data"
 
 function App() {
     const products = data.products;
+    products.sort((a,b) => (a.price > b.price)? 1 : -1);
+    console.log(products);
 
     const [cartItems,setCartItems] = useState([]);
 

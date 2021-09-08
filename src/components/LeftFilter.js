@@ -4,18 +4,17 @@ import '../App.css';
 
 export default function SectionLeft(props) {
 
-    let [products, setProducts] = useState([]);
+
 
     function sortLowToHigh() {
-        setProducts = props.data.data.sort(function (a, b) {
-            return a.price - b.price;
-        });
+
+        console.log(props)
+
     }
 
         function sortHighToLow() {
-            setProducts = props.data.data.sort(function (a, b) {
-                return b.price - a.price;
-            });
+            return props.data.sort((a,b) => (a.price < b.price)? 1 : -1);
+
         }
 
         return (
