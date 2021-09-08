@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
 }
 
 .header {
@@ -34,10 +35,15 @@ h1, h2 {
 }
 
 .sectionRight {
-    width: 25%;
+    width: 600px;
     height: 600px;
-
     background-color: #bcd0d9;
+    padding: 10px;
+    font-size: 15px;
+}
+.
+.sectionRight h3 {
+    font-size: 17px;
 }
 .cardWrapper {
     margin: 1rem;
