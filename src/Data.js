@@ -35,7 +35,7 @@ const data = {
             price:6,
             imgFile: './book (1).jpg'
         },
-        {   id:7 ,
+        {   id:8,
             title: "Jens' Story",
             price:3,
             imgFile: './book (3).jpg'

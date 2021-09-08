@@ -17,7 +17,7 @@ function SectionRight({onAdd,cartItems,onRemove}) {
                         <p className="">{item.title}</p>
                         <div className="">
                             <button onClick={()=>onAdd(item)} className="add">+</button>
-                            <button onClick={()=>onRemove(item)} className="add">-</button>
+                            <button onClick={()=>onRemove(item)} className="removeBtn">-</button>
                         </div>
                         <p className="">
                             {item.qty} x {item.price}$
