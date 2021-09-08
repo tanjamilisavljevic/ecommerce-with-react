@@ -61,11 +61,6 @@
     margin-bottom: 2rem;
 }
 
-.sectionLeftWrapper {
-    display: flex;
-    margin: 1rem;
-}
-
 .leftTitle {
     color: #6A197D;
     font-size: medium;
@@ -110,10 +105,36 @@ hr{
     cursor: default;
 }
 
+@media only screen and (max-width: 900px) {
+    .leftTitle {
+        font-size: small;
+        margin-left: 0.5rem;
+    }
+    .dropdown-content {
+        min-width: 3rem;
+        font-size: 0.5rem;
+        padding: 0.05rem;
+    }
+    .footerTextCenterTitle {
+        font-size: x-large;
+    }
+    .footerTitle {
+        font-size: medium;
+        font-weight: bold;
+    }
+    .footerIcon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .footerText {
+        font-size: medium;
+    }
+}
+
 @media only screen and (max-width: 770px) {
     .footerIcon {
-        height: 2rem;
-        width: 2rem;
+        height: 1.5rem;
+        width: 1.5rem;
         padding: 0.5rem;
     }
 
@@ -129,20 +150,6 @@ hr{
 
     .footerText {
         font-size: small;
-    }
-
-    .sectionLeft {
-        width: 20%;
-    }
-
-    .leftTitle {
-        font-size: small;
-    }
-
-    .dropdown-content {
-        min-width: 3rem;
-        font-size: 0.5rem;
-        padding: 0.05rem;
     }
 }
 
