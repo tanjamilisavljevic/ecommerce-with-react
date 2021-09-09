@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Carousel() {
+function Homepage() {
     return (
         <div>
             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
@@ -24,8 +24,12 @@ function Carousel() {
                     <span className="sr-only">Next</span>
                 </a>
             </div>
+
+
+            <h1 className="homeTitle"> Tanja&Choka</h1>
+            <p className="shopTitle"> SHOP</p>
         </div>
     );
 }
 
-export default Carousel;
+export default Homepage;

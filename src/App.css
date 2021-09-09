@@ -149,4 +149,39 @@ h1, h2 {
 .removeBtn{
     border: #ff5a93 1px solid;
 }
-
+.homeTitle{
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 50px;
+    text-align: center;
+    margin-top: 5rem;
+}
+.shopTitle{
+    font-size: 4rem;
+    font-weight: 1000;
+    text-align: center;
+    color: #ca8cd9;
+    animation-name: underline;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding-bottom: 2px;
+    background-image: linear-gradient(#b0f1e9, #d05ef6);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s,
+    background-position 0s 0.3s;
+}
+@keyframes underline {
+    from {
+        background-position: 0 100%;
+        background-size: 0% 2px;
+    }
+    to {
+        background-position: 100% 100%;
+        background-size: 100% 2px;;
+    }
+}
