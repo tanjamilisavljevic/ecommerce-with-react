@@ -13,22 +13,24 @@ body {
 
 h1, h2 {
     color: #6A197D;
+    font-size:2em;
 }
 
 .icons {
     width: 35px;
+    cursor: pointer;
+
 }
 
-.userIcon {
-    margin-left: 60px;
-    margin-right: 40px;
-    cursor: pointer;
+.header-icons-wrap{
+    display: flex;
+    width: 15%;
+    margin-right: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
 }
-.icon-cart{
-    margin: 0;
-    cursor: pointer;
-}
-
 .main {
     display: flex;
     /*justify-content: space-between;*/

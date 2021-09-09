@@ -194,6 +194,13 @@ hr{
     }
     .cardWrapper {
         grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+        min-width: 100px;
+    }
+    h1{
+        font-size: 1.3em;
+    }
+    h2{
+        font-size: 1em;
     }
 }
 @media only screen and (max-width: 450px) {
