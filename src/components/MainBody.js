@@ -10,7 +10,6 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
         data.sort((a, b) => (a.price > b.price) ? 1 : -1);
         setOrder("up");
     }, [])
-
     useEffect(() => {
         if (order === "up") {
             data.sort((a, b) => (a.price < b.price) ? 1 : -1);
@@ -18,6 +17,15 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
             data.sort((a, b) => (a.price > b.price) ? 1 : -1);
         }
     }, [order])
+
+    useEffect(() => {
+        if (order === "AtoZ") {
+            data.sort((a, b) => (a.title < b.title) ? 1 : -1);
+        } else {
+            data.sort((a, b) => (a.title > b.title) ? 1 : -1);
+        }
+    }, [order])
+
 
 
     return (
@@ -35,7 +43,19 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
                         <div className="dropdown-content">
                             <p onClick={() => setOrder("down")}>Price high to low</p>
                         </div>
+
+                        <hr/>
+
+                        <div className="dropdown-content">
+                            <p onClick={() => setOrder("AtoZ")}>Title A to Z</p>
+                        </div>
+                        <hr className="dropdown-content"/>
+                        <div className="dropdown-content">
+                            <p onClick={() => setOrder("ZtoA")}>Title Z to A</p>
+                        </div>
                     </div>
+
+
                 </section>
                 <div className="cardWrapper">
                     {data.map((product, index) => (
