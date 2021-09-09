@@ -207,15 +207,15 @@ hr{
 
     .sectionLeft {
         width: 100vw;
-        height: 20vh;
+        height: 10vh;
         text-align: center;
+    }
+    .sectionLeft:hover{
+        height: 20vh;
     }
     .leftTitle {
         font-size: small;
         margin-left: 0.5rem;
-    }
-    .dropdown{
-        margin-top: 0.5rem;
     }
     .wrapperForSmallScreen{
         display: flex;
@@ -228,6 +228,17 @@ hr{
         min-width: auto;
         width: auto;
     }
+
+    .dropdown {
+        margin-top: 0.5rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: inline-block;
+    }
+
 }
 @media only screen and (max-width: 360px) {
     .cardWrapper {

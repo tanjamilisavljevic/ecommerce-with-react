@@ -27,7 +27,6 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
     }, [order])
 
 
-
     return (
         <main className="main">
             <div className="wrapperForSmallScreen">
@@ -43,9 +42,7 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
                         <div className="dropdown-content">
                             <p onClick={() => setOrder("down")}>Price high to low</p>
                         </div>
-
                         <hr/>
-
                         <div className="dropdown-content">
                             <p onClick={() => setOrder("AtoZ")}>Title A to Z</p>
                         </div>
@@ -54,7 +51,6 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
                             <p onClick={() => setOrder("ZtoA")}>Title Z to A</p>
                         </div>
                     </div>
-
 
                 </section>
                 <div className="cardWrapper">
