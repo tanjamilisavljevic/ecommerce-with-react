@@ -5,6 +5,7 @@ import SectionRight from "./RightSection";
 function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
 
     const [order, setOrder] = useState('');
+    const [alphabeticOrder, setAlphabeticOrder] = useState('');
 
     useEffect(() => {
         data.sort((a, b) => (a.price > b.price) ? 1 : -1);
@@ -12,19 +13,24 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
     }, [])
     useEffect(() => {
         if (order === "up") {
+            console.log("up");
             data.sort((a, b) => (a.price < b.price) ? 1 : -1);
         } else {
+            console.log("down");
             data.sort((a, b) => (a.price > b.price) ? 1 : -1);
         }
     }, [order])
 
+
     useEffect(() => {
-        if (order === "AtoZ") {
+        if (alphabeticOrder === "AtoZ") {
+            console.log("a");
             data.sort((a, b) => (a.title < b.title) ? 1 : -1);
         } else {
+            console.log("z");
             data.sort((a, b) => (a.title > b.title) ? 1 : -1);
         }
-    }, [order])
+    }, [alphabeticOrder])
 
 
     return (
@@ -44,11 +50,11 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
                         </div>
                         <hr/>
                         <div className="dropdown-content">
-                            <p onClick={() => setOrder("AtoZ")}>Title A to Z</p>
+                            <p onClick={() => setAlphabeticOrder("AtoZ")}>Title A to Z</p>
                         </div>
                         <hr className="dropdown-content"/>
                         <div className="dropdown-content">
-                            <p onClick={() => setOrder("ZtoA")}>Title Z to A</p>
+                            <p onClick={() => setAlphabeticOrder("ZtoA")}>Title Z to A</p>
                         </div>
                     </div>
 

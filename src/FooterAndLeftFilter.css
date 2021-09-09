@@ -19,7 +19,7 @@
 }
 
 .footerIcon {
-    height:3rem;
+    height: 3rem;
     width: 3rem;
     margin-left: 0.6rem;
     background-color: white;
@@ -82,30 +82,35 @@
     font-weight: bold;
     padding: 0.2rem;
     color: #6A197D;
-    margin-top: 0.5rem;
 }
 
-hr{
+hr {
     margin: 0;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
     cursor: pointer;
 }
 
 .dropdown-content:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-#address{
+p {
+    margin: 0.2rem;
+}
+
+#address {
     text-decoration: none;
     cursor: default;
 }
 
-.footerTitle{
+.footerTitle {
     cursor: default;
 }
-.wrapperForSmallScreen{
+
+.wrapperForSmallScreen {
     display: flex;
 }
 
@@ -114,22 +119,27 @@ hr{
         font-size: small;
         margin-left: 0.5rem;
     }
+
     .dropdown-content {
         min-width: 3rem;
         font-size: 0.5rem;
         padding: 0.05rem;
     }
+
     .footerTextCenterTitle {
         font-size: x-large;
     }
+
     .footerTitle {
         font-size: medium;
         font-weight: bold;
     }
+
     .footerIcon {
         height: 2.5rem;
         width: 2.5rem;
     }
+
     .footerText {
         font-size: medium;
     }
@@ -192,17 +202,21 @@ hr{
     .footerTitle {
         font-size: 10px;
     }
+
     .cardWrapper {
         grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
         min-width: 100px;
     }
-    h1{
+
+    h1 {
         font-size: 1.3em;
     }
-    h2{
+
+    h2 {
         font-size: 1em;
     }
 }
+
 @media only screen and (max-width: 450px) {
 
     .sectionLeft {
@@ -210,17 +224,21 @@ hr{
         height: 10vh;
         text-align: center;
     }
-    .sectionLeft:hover{
+
+    .sectionLeft:hover {
         height: 20vh;
     }
+
     .leftTitle {
         font-size: small;
         margin-left: 0.5rem;
     }
-    .wrapperForSmallScreen{
+
+    .wrapperForSmallScreen {
         display: flex;
         flex-flow: column;
     }
+
     .cardWrapper {
         grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
         grid-template-rows: auto;
@@ -240,6 +258,7 @@ hr{
     }
 
 }
+
 @media only screen and (max-width: 360px) {
     .cardWrapper {
         grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));

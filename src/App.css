@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;
     box-sizing: border-box;
+    background-color: #eff7fd;
 }
 
 .header {
@@ -80,7 +81,7 @@ h1, h2 {
     /*width: 10em;*/
     display: flex;
     align-items: center;
-    background-image: linear-gradient(#E0DEDE, #ffffff);
+    background-image: linear-gradient(#eff7fd, #ffffff);
 }
 .productPictures{
     width: 100%;
