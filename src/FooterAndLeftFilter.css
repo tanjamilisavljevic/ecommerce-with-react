@@ -105,6 +105,9 @@ hr{
 .footerTitle{
     cursor: default;
 }
+.wrapperForSmallScreen{
+    display: flex;
+}
 
 @media only screen and (max-width: 900px) {
     .leftTitle {
@@ -193,3 +196,35 @@ hr{
         grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
     }
 }
+@media only screen and (max-width: 450px) {
+
+    .sectionLeft {
+        width: 100vw;
+        height: 20vh;
+        text-align: center;
+    }
+    .leftTitle {
+        font-size: small;
+        margin-left: 0.5rem;
+    }
+    .dropdown{
+        margin-top: 0.5rem;
+    }
+    .wrapperForSmallScreen{
+        display: flex;
+        flex-flow: column;
+    }
+    .cardWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 4px;
+        min-width: auto;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .cardWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+    }
+}
+

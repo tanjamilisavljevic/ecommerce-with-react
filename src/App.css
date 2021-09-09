@@ -70,7 +70,7 @@ h1, h2 {
      grid-template-rows: auto;
     grid-gap: 8px;
     min-width: 300px;
-    width: 1000px;
+    width: 70%;
     margin: 0 auto;
 }
 .card {
