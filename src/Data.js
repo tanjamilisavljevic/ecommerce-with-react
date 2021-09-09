@@ -17,7 +17,7 @@ const data = {
         },
         {   id: 4,
             title: "Kadir's Story",
-            price:10,
+            price:16,
             imgFile: './book (4).jpg'
         },
         {   id:5 ,
@@ -33,14 +33,28 @@ const data = {
         {   id:7 ,
             title: "Jawad's Story",
             price:6,
-            imgFile: './book (1).jpg'
+            imgFile: './book (7).jpg'
         },
         {   id:8,
             title: "Jens' Story",
             price:3,
-            imgFile: './book (3).jpg'
+            imgFile: './book (8).jpg'
+        },
+        {   id:9,
+            title: "Ewelina's Story",
+            price:7,
+            imgFile: './book (9).jpg'
+        },
+        {   id:10,
+            title: "Jonathan's Story",
+            price:14,
+            imgFile: './book (10).jpg'
+        },
+        {   id:11,
+            title: "Tanja' Story",
+            price:5,
+            imgFile: './book (11).jpg'
         }
-
     ]
 }
 export default data;
