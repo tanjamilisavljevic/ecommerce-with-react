@@ -11,14 +11,17 @@ import NavBar from "./NavBar";
 function Shop() {
     const products = data.products;
     const [cartItems, setCartItems] = useState([]);
-    const [cartCount, setCartCount] = useState(0)
+    const [cartCount, setCartCount] = useState('0');
+
+    localStorage.setItem('cartCount', cartItems.length);
+    console.log(localStorage.getItem('cartCount'));
     const onAdd= (product)=>{
-        setCartCount(cartCount + 1);
-        console.log(cartCount)
+
 
         const exist = cartItems.find(x=>x.id === product.id);
         if(exist){
             setCartItems(cartItems.map(x=>x.id===product.id?{...exist,qty: exist.qty + 1}:x));
+
         } else{
             setCartItems([...cartItems,{...product,qty: 1 }]);
         }
@@ -44,8 +47,6 @@ function Shop() {
 
     return (
         <>
-            <Header  countCartItems={cartCount} toggleCart={toggleCart} />
-            <NavBar/>
             <MainBody onAdd={onAdd} onRemove={onRemove} data={products} cartItems={cartItems} leaveCart={leaveCart}/>
             <Footer />
         </>
