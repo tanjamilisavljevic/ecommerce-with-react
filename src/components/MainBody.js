@@ -13,10 +13,8 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
     }, [])
     useEffect(() => {
         if (order === "up") {
-            console.log("up");
             data.sort((a, b) => (a.price < b.price) ? 1 : -1);
         } else {
-            console.log("down");
             data.sort((a, b) => (a.price > b.price) ? 1 : -1);
         }
     }, [order])
@@ -24,10 +22,8 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
 
     useEffect(() => {
         if (alphabeticOrder === "AtoZ") {
-            console.log("a");
             data.sort((a, b) => (a.title < b.title) ? 1 : -1);
         } else {
-            console.log("z");
             data.sort((a, b) => (a.title > b.title) ? 1 : -1);
         }
     }, [alphabeticOrder])
