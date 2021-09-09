@@ -24,7 +24,7 @@ function App() {
         <>
             <NavBar />
             <Route exact path="/shop" component={Shop} />
-            <Homepage />
+            <Route exact path="/" component={Homepage} />
         </>
     );
 
