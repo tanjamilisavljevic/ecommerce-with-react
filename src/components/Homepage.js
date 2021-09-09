@@ -36,7 +36,7 @@ function Homepage() {
                 and connect - we hope our new bookshop will make the time you spend with us even more special.
             </div>
             <div className="buttonWrapper">
-                <p className="toTheShopButton"> <Link to="/shop">To the shop!</Link></p>
+                <Link className="toTheShopButton" to="/shop">To the shop!</Link>
             </div>
         </div>
     );
