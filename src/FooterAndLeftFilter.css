@@ -189,4 +189,7 @@ hr{
     .footerTitle {
         font-size: 10px;
     }
+    .cardWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+    }
 }
