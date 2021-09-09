@@ -62,15 +62,18 @@ h1, h2 {
     padding: 20px;
 }
 .cardWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: flex-start;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+     grid-template-rows: auto;
+    grid-gap: 8px;
 }
 .card {
     padding: 10px;
-    width: 15vw;
+    /*width: 10em;*/
     display: flex;
-    flex-grow: 2;
     align-items: center;
     background-image: linear-gradient(#E0DEDE, #ffffff);
 }
