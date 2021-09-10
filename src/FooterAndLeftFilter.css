@@ -6,7 +6,6 @@
     background: rgba(255, 165, 176, 0.5);
     color: #6A197D;
     height: 15rem;
-    border-top: solid 2px #E0DEDE;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     justify-content: space-around;
