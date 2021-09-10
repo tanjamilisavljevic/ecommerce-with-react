@@ -228,3 +228,11 @@ h1, h2 {
     display: flex;
     justify-content: center;
 }
+.navbar-container{
+    display: flex;
+}
+.navbar-item{
+    text-decoration: none;
+    color: #6A197D;
+    margin: 0.5rem;
+}
