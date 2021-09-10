@@ -5,7 +5,6 @@ import NavBar from "../NavBar";
 function Homepage() {
     return (
         <div>
-            <NavBar/>
             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">

@@ -20,7 +20,7 @@ function App() {
 
     return (
         <>
-            <Header  getCount ={'ghhhhhs'} toggleCart={toggleCart} />
+            <Header  toggleCart={toggleCart} />
             <NavBar/>
             <Route exact path="/Shop" component={Shop} />
             <Route exact path="/" component={Homepage} />

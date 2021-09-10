@@ -17,7 +17,7 @@ function Header(props) {
                 <Link to="/" className="headerTitle">Tanja&Choka</Link>
                 {/*<div><h1>Tanja&Choka</h1> </div>*/}
                 <div className="header-icons-wrap">
-                   <img  onClick={toggleCart}className={"icons  icon-cart"} src="https://img.icons8.com/nolan/64/fast-cart.png"/><p className='count'></p>
+                   <img  onClick={toggleCart} className={"icons  icon-cart"} src="https://img.icons8.com/nolan/64/fast-cart.png"/><p className='count'></p>
                     <img className={"icons userIcon"} src="https://img.icons8.com/nolan/64/person-male.png"/>
                 </div>
             </header>
