@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {Link} from "react-router-dom";
 
 
 function Header(props) {
@@ -13,7 +14,8 @@ function Header(props) {
     return (
         <div>
             <header className="header">
-                <div><h1>Tanja&Choka</h1> </div>
+                <Link to="/" className="headerTitle">Tanja&Choka</Link>
+                {/*<div><h1>Tanja&Choka</h1> </div>*/}
                 <div className="header-icons-wrap">
                    <img  onClick={toggleCart}className={"icons  icon-cart"} src="https://img.icons8.com/nolan/64/fast-cart.png"/>{cartCount > 0 && cartCount}
                     <img className={"icons userIcon"} src="https://img.icons8.com/nolan/64/person-male.png"/>

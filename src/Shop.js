@@ -47,7 +47,7 @@ function Shop() {
 
     return (
         <>
-
+            <Header   toggleCart={toggleCart} />
             <MainBody onAdd={onAdd} onRemove={onRemove} data={products} cartItems={cartItems} leaveCart={leaveCart}/>
             <Footer />
         </>

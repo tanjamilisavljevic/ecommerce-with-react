@@ -237,3 +237,12 @@ h1, h2 {
     color: #6A197D;
     margin: 0.5rem;
 }
+.headerTitle{
+    color: #6A197D;
+    font-size:2em;
+    letter-spacing: 10px;
+}
+.headerTitle:hover{
+    text-decoration: none;
+    color: #9a28b4;
+}
