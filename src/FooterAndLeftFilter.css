@@ -205,10 +205,13 @@ p {
         flex-flow: column;
         justify-items: end;
     }
-
     .iconsArea {
         margin-right: 1rem;
     }
+    .footerTitle {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -229,10 +232,6 @@ p {
 
     .footerText {
         font-size: 8px;
-    }
-
-    .footerTitle {
-        font-size: 10px;
     }
 
     .cardWrapper {
