@@ -27,23 +27,32 @@ function SectionRight({onAdd,cartItems,onRemove, leaveCart}) {
             </div>
             {cartItems.length !== 0 &&(
                 <>
-                    <hr></hr>
-                    <div className="row">
-                        <h5>Items Price</h5>
-                        <p>{itemsPrice.toFixed(2)}$</p>
+                    <div className="check">
+                        <hr></hr>
+
+                        <div className="row">
+                            <h5>Items Price</h5>
+                            <p>{itemsPrice.toFixed(2)}$</p>
+                        </div>
+                        <div className="row">
+                            <h5>Tax</h5>
+                            <p>{taxPrice.toFixed(2)}$</p>
+                        </div>
+                        <div className="row">
+                            <h5>Shipping</h5>
+                            <p>{shippingPrice.toFixed(2)}$</p>
+                        </div>
+                        <div className="row">
+                            <h5>Types of items</h5>
+                            <p className="total-items">{cartItems.length}</p>
+                        </div>
+                        <div className="row">
+                            <h5><strong>Total:</strong></h5>
+                            <p>{totalPrice.toFixed(2)}$</p>
+                        </div>
                     </div>
-                    <div className="row">
-                        <h5>Tax</h5>
-                        <p>{taxPrice.toFixed(2)}$</p>
-                    </div>
-                    <div className="row">
-                        <h5>Shipping</h5>
-                        <p>{shippingPrice.toFixed(2)}$</p>
-                    </div>
-                    <div className="row">
-                        <h5><strong>Total:</strong></h5>
-                        <p>{totalPrice.toFixed(2)}$</p>
-                    </div>
+
+                    <button className="addToCart orderBtn"> Order</button>
                 </>
             )}
         </section>
