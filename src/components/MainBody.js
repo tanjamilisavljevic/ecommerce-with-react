@@ -4,30 +4,30 @@ import SectionRight from "./RightSection";
 
 function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
 
-    const [order, setOrder] = useState('');
-    const [alphabeticOrder, setAlphabeticOrder] = useState('');
+    const [order, setOrder] = useState(data);
 
-    useEffect(() => {
-        data.sort((a, b) => (a.price > b.price) ? 1 : -1);
-        setOrder("up");
-    }, [])
-    useEffect(() => {
-        if (order === "up") {
-            data.sort((a, b) => (a.price < b.price) ? 1 : -1);
-        } else {
-            data.sort((a, b) => (a.price > b.price) ? 1 : -1);
-        }
-    }, [order])
+    function ascending(){
+        let ascend = [...data];
+        let asc = ascend.sort((a, b) => a.price - b.price)
+        console.log(asc);
+        setOrder(asc);
+    }
+    function descending(){
+        let descend = [...data];
+        let desc = descend.sort((a, b) => b.price - a.price);
+        setOrder(desc);
+    }
+    function alphabeticOrderAtoZ(){
+        let alph = [...data];
+        let alphabetAtoZ = alph.sort((a, b) => (a.title > b.title) ? 1 : -1);
+        setOrder(alphabetAtoZ)
 
-
-    useEffect(() => {
-        if (alphabeticOrder === "AtoZ") {
-            data.sort((a, b) => (a.title < b.title) ? 1 : -1);
-        } else {
-            data.sort((a, b) => (a.title > b.title) ? 1 : -1);
-        }
-    }, [alphabeticOrder])
-
+    }
+    function  alphabeticOrderZtoA (){
+        let alph = [...data];
+        let alphabetAtoZ = alph.sort((a, b) => (a.title < b.title) ? 1 : -1);
+        setOrder(alphabetAtoZ)
+    }
 
     return (
         <main className="main">
@@ -38,25 +38,25 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
                         <span className="leftTitle" id="dash">-</span>
                         <hr/>
                         <div className="dropdown-content">
-                            <p onClick={() => setOrder("up")}>Price low to high</p>
+                            <p onClick={ascending} >Price low to high</p>
                         </div>
                         <hr className="dropdown-content"/>
                         <div className="dropdown-content">
-                            <p onClick={() => setOrder("down")}>Price high to low</p>
+                            <p onClick={descending}>Price high to low</p>
                         </div>
                         <hr/>
                         <div className="dropdown-content">
-                            <p onClick={() => setAlphabeticOrder("AtoZ")}>Title A to Z</p>
+                            <p onClick={alphabeticOrderAtoZ}>Title A to Z</p>
                         </div>
                         <hr className="dropdown-content"/>
                         <div className="dropdown-content">
-                            <p onClick={() => setAlphabeticOrder("ZtoA")}>Title Z to A</p>
+                            <p onClick={alphabeticOrderZtoA}>Title Z to A</p>
                         </div>
                     </div>
 
                 </section>
                 <div className="cardWrapper">
-                    {data.map((product, index) => (
+                    {order.map((product, index) => (
                         <div key={index} className="card">
                             <img src={product.imgFile} className="productPictures"/>
                             <h6 className="productTitle">{product.title}</h6>
@@ -73,3 +73,4 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
 }
 
 export default MainBody;
+
