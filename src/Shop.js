@@ -47,6 +47,7 @@ function Shop() {
 
     return (
         <>
+
             <MainBody onAdd={onAdd} onRemove={onRemove} data={products} cartItems={cartItems} leaveCart={leaveCart}/>
             <Footer />
         </>

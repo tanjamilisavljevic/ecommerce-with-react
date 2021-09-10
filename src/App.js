@@ -23,7 +23,6 @@ function App() {
     return (
         <>
             <Header   toggleCart={toggleCart} />
-            <NavBar/>
             <Route exact path="/shop" component={Shop} />
             <Route exact path="/" component={Homepage} />
         </>
