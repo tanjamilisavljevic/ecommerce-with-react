@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.db6b54b2.chunk.css",
-    "main.js": "/static/js/main.65c491f7.chunk.js",
-    "main.js.map": "/static/js/main.65c491f7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.10fe01e6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.10fe01e6.js.map",
-    "static/js/2.c1c47b22.chunk.js": "/static/js/2.c1c47b22.chunk.js",
-    "static/js/2.c1c47b22.chunk.js.map": "/static/js/2.c1c47b22.chunk.js.map",
-    "static/js/3.d0a6fa9a.chunk.js": "/static/js/3.d0a6fa9a.chunk.js",
-    "static/js/3.d0a6fa9a.chunk.js.map": "/static/js/3.d0a6fa9a.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.db6b54b2.chunk.css.map": "/static/css/main.db6b54b2.chunk.css.map",
-    "static/js/2.c1c47b22.chunk.js.LICENSE.txt": "/static/js/2.c1c47b22.chunk.js.LICENSE.txt"
+    "main.css": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/css/main.db6b54b2.chunk.css",
+    "main.js": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/js/main.65c491f7.chunk.js",
+    "main.js.map": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/js/main.65c491f7.chunk.js.map",
+    "runtime-main.js": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/js/runtime-main.f39ccff4.js",
+    "runtime-main.js.map": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/js/runtime-main.f39ccff4.js.map",
+    "static/js/2.c1c47b22.chunk.js": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/js/2.c1c47b22.chunk.js",
+    "static/js/2.c1c47b22.chunk.js.map": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/js/2.c1c47b22.chunk.js.map",
+    "static/js/3.d0a6fa9a.chunk.js": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/js/3.d0a6fa9a.chunk.js",
+    "static/js/3.d0a6fa9a.chunk.js.map": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/js/3.d0a6fa9a.chunk.js.map",
+    "index.html": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/index.html",
+    "static/css/main.db6b54b2.chunk.css.map": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/css/main.db6b54b2.chunk.css.map",
+    "static/js/2.c1c47b22.chunk.js.LICENSE.txt": "/https//tanjamilisavljevic.github.io/ecommerce-with-react/static/js/2.c1c47b22.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.10fe01e6.js",
+    "static/js/runtime-main.f39ccff4.js",
     "static/js/2.c1c47b22.chunk.js",
     "static/css/main.db6b54b2.chunk.css",
     "static/js/main.65c491f7.chunk.js"
