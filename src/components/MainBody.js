@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import SectionRight from "./RightSection";
+import Header from "./Header";
 
 
 function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
@@ -28,8 +29,13 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
         let alphabetAtoZ = alph.sort((a, b) => (a.title < b.title) ? 1 : -1);
         setOrder(alphabetAtoZ)
     }
+    let toggleCart =() =>{
+        document.querySelector(".sectionRight").classList.toggle("active");
+    }
 
     return (
+        <div>
+            <Header  toggleCart={toggleCart} />
         <main className="main">
             <div className="wrapperForSmallScreen">
                 <section className="sectionLeft">
@@ -68,6 +74,7 @@ function MainBody({data, onAdd, cartItems, onRemove, leaveCart}) {
             </div>
             <SectionRight data={data} cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} leaveCart={leaveCart}/>
         </main>
+        </div>
     );
 
 }

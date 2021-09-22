@@ -12,15 +12,8 @@ import './App.css';
 
 function App() {
 
-    let toggleCart =() =>{
-        document.querySelector(".sectionRight").classList.toggle("active");
-    }
-
-
-
     return (
         <>
-            <Header  toggleCart={toggleCart} />
             <NavBar/>
             <Route exact path="/Shop" component={Shop} />
             <Route exact path="/" component={Homepage} />
