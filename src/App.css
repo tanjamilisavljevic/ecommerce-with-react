@@ -2,13 +2,14 @@ body {
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;
     box-sizing: border-box;
-    background-color: #eff7fd;
+    background-color: rgb(249, 250, 255);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    background: rgba(255, 165, 176, 0.5);
+    background: rgba(194, 206, 255, 0.7);
+    padding: 0.8rem;
     color: #a147b6;
 }
 
@@ -21,7 +22,7 @@ h1, h2 {
 .icons {
     width: 35px;
     cursor: pointer;
-
+    margin-left: 1rem;
 }
 
 .header-icons-wrap{
@@ -29,7 +30,7 @@ h1, h2 {
     width: 15%;
     margin-right: 20px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: end;
     align-content: flex-start;
     align-items: center;
 }
@@ -40,7 +41,7 @@ h1, h2 {
 
 .sectionLeft {
     width: 20vw;
-    background-color: #e5c7ec;
+    background-color: rgba(240, 242, 255, 0.5);
     height: inherit;
 }
 
@@ -72,7 +73,7 @@ h1, h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
      grid-template-rows: auto;
-    grid-gap: 8px;
+    grid-gap: 5px;
     min-width: 300px;
     width: 70%;
     margin: 0 auto;
@@ -112,7 +113,7 @@ h1, h2 {
     border-radius: 16px;
     font-size: 15px;
     font-weight: bold;
-    background-image: linear-gradient(#E0DEDE, #b0e2e2);
+    background-color:  rgba(194, 206, 255, 1);
     color: #6A197D;
     border: none;
     padding: 4px 8px;
@@ -120,11 +121,11 @@ h1, h2 {
 }
 
 .addToCart:hover{
-    background-image: linear-gradient(#6A197D, #7d418d);
-    color: #b0e2e2;
+    background-color: #6A197D;;
+    color:  rgba(194, 206, 255, 1);
 }
 .addToCart:active {
-    background-image: linear-gradient(#d196e2, #d5a1e3);
+    background-image: linear-gradient(#b0e2e2, #b0e2e2);
     color: #6A197D;
 }
 .add:active{
@@ -234,15 +235,15 @@ h1, h2 {
     border-radius: 25px;
     font-size: 20px;
     font-weight: bold;
-    background-image: linear-gradient(#E0DEDE, #b0e2e2);
+    background-color:  rgba(194, 206, 255, 1);
     color: #6A197D;
     border: none;
     padding: 15px;
     margin-bottom: 1rem;
 }
 .toTheShopButton:hover{
-    background-image: linear-gradient(#6A197D, #7d418d);
-    color: #b0e2e2;
+    background-color: #6A197D;;
+    color:  rgba(194, 206, 255, 1);
     text-decoration: none;
 }
 .toTheShopButton:active {
@@ -255,6 +256,7 @@ h1, h2 {
 }
 .navbar-container{
     display: flex;
+    background: rgba(194, 206, 255, 0.7);
 }
 .navbar-item{
     text-decoration: none;
