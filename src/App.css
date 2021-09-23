@@ -41,14 +41,18 @@ h1, h2 {
     align-items: center;
 }
 .main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     /*justify-content: space-between;*/
 }
 
 .sectionLeft {
-    width: 20vw;
+    width: auto;
+    padding-right: 1rem;
     background-color: rgba(240, 242, 255, 0.5);
     height: inherit;
+    border-radius: 16px;
 }
 
 .sectionRight {
@@ -77,11 +81,11 @@ h1, h2 {
     /*flex-wrap: wrap;*/
     /*justify-content: flex-start;*/
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
      grid-template-rows: auto;
     grid-gap: 5px;
     min-width: 300px;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 .card {

@@ -262,7 +262,8 @@ p {
 @media only screen and (max-width: 450px) {
     .icons {
         width: 30px;
-        padding: 0.1rem;
+        padding: 0.3rem;
+        margin: 0;
     }
     .headerTitle{
         font-size:1.2em;
@@ -289,7 +290,7 @@ p {
     }
 
     .cardWrapper {
-        grid-template-columns: repeat(auto-fit, minmax(7em, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
         grid-template-rows: auto;
         grid-gap: 4px;
         min-width: auto;
@@ -313,7 +314,7 @@ p {
         margin-right: 0;
     }
     .cardWrapper {
-        grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
     }
     .shopDescription{
         margin-left: 2rem;
