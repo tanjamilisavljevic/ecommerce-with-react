@@ -185,6 +185,11 @@ h1, h2 {
     display: flex;
 }
 
+.count {
+    font-weight: bolder;
+    color: white;
+}
+
 .check {
     margin-top: 5px;
 }
@@ -304,7 +309,8 @@ h1, h2 {
     color: #6A197D;
     margin: 0.5rem;
 }
-.navbar-item:hover{
+
+.navbar-item:hover {
     color: #962aaf;
     text-decoration: none;
 }
