@@ -1,5 +1,5 @@
 import React from "react";
-import {Route,Link} from "react-router-dom";
+import {Route, Link} from "react-router-dom";
 import NavBar from "./NavBar";
 import Homepage from "./components/Homepage";
 import Shop from "./Shop";
@@ -11,8 +11,8 @@ function App() {
     return (
         <>
             <NavBar/>
-            <Route exact path="/Shop" component={Shop} />
-            <Route exact path="/" component={Homepage} />
+            <Route exact path="/Shop" component={Shop}/>
+            <Route exact path="/" component={Homepage}/>
         </>
     );
 
