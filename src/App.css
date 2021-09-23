@@ -8,7 +8,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background: rgba(194, 206, 255, 0.7);
+    background-color: rgba(194, 206, 255, 0.7);
     padding: 0.8rem;
     color: #a147b6;
 }
@@ -20,9 +20,15 @@ h1, h2 {
 }
 
 .icons {
-    width: 35px;
+    width: 45px;
     cursor: pointer;
     margin-left: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+.icons:hover {
+    box-shadow: 1px 1px 10px #a6b7ff;
 }
 
 .header-icons-wrap{
@@ -30,7 +36,7 @@ h1, h2 {
     width: 15%;
     margin-right: 20px;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     align-content: flex-start;
     align-items: center;
 }
@@ -71,7 +77,7 @@ h1, h2 {
     /*flex-wrap: wrap;*/
     /*justify-content: flex-start;*/
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
      grid-template-rows: auto;
     grid-gap: 5px;
     min-width: 300px;

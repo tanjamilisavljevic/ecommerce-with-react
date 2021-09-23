@@ -32,7 +32,7 @@
 }
 
 .footerIcon:hover {
-    box-shadow: 1px 1px 10px #6A197D;
+    box-shadow: 1px 1px 10px #a6b7ff;
 }
 
 .footerTextArea {
@@ -158,8 +158,8 @@ p {
     }
 
     .footerIcon {
-        height: 2.5rem;
-        width: 2.5rem;
+        width: 40px;
+        height: 40px;
     }
 
     .footerText {
@@ -169,9 +169,10 @@ p {
 
 @media only screen and (max-width: 770px) {
     .footerIcon {
-        height: 1.5rem;
-        width: 1.5rem;
+        width: 30px;
+        height: 30px;
         padding: 0.5rem;
+        margin: 10px;
     }
 
     .footerTextCenterTitle {
@@ -190,6 +191,14 @@ p {
 }
 
 @media only screen and (max-width: 590px) {
+    .icons {
+        width: 35px;
+        padding: 0.2rem;
+    }
+    .headerTitle{
+        font-size:1.5em;
+        letter-spacing: 7px;
+    }
     .homeTitle {
         font-size: 2rem;
         font-weight: 500;
@@ -210,7 +219,10 @@ p {
     .footerTitle {
         display: none;
     }
-
+    .cardWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+        min-width: 100px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -248,7 +260,14 @@ p {
 }
 
 @media only screen and (max-width: 450px) {
-
+    .icons {
+        width: 30px;
+        padding: 0.1rem;
+    }
+    .headerTitle{
+        font-size:1.2em;
+        letter-spacing: 5px;
+    }
     .sectionLeft {
         width: 100%;
         height: 10vh;
@@ -290,6 +309,9 @@ p {
 }
 
 @media only screen and (max-width: 360px) {
+    .header-icons-wrap{
+        margin-right: 0;
+    }
     .cardWrapper {
         grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
     }
