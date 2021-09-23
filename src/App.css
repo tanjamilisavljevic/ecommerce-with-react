@@ -15,7 +15,7 @@ body {
 
 h1, h2 {
     color: #6A197D;
-    font-size:2em;
+    font-size: 2em;
     letter-spacing: 10px;
 }
 
@@ -27,11 +27,12 @@ h1, h2 {
     border-radius: 50%;
     padding: 0.4rem;
 }
+
 .icons:hover {
     box-shadow: 1px 1px 10px #a6b7ff;
 }
 
-.header-icons-wrap{
+.header-icons-wrap {
     display: flex;
     width: 15%;
     margin-right: 20px;
@@ -40,6 +41,7 @@ h1, h2 {
     align-content: flex-start;
     align-items: center;
 }
+
 .main {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -67,7 +69,8 @@ h1, h2 {
     right: 20px;
     top: 40px;
 }
-.active{
+
+.active {
     display: block;
 }
 
@@ -76,18 +79,20 @@ h1, h2 {
     font-size: 17px;
     padding: 20px;
 }
+
 .cardWrapper {
     /*display: flex;*/
     /*flex-wrap: wrap;*/
     /*justify-content: flex-start;*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
-     grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-gap: 5px;
     min-width: 300px;
     width: 80%;
     margin: 0 auto;
 }
+
 .card {
     padding: 10px;
     /*width: 10em;*/
@@ -95,86 +100,100 @@ h1, h2 {
     align-items: center;
     background-image: linear-gradient(#eff7fd, #ffffff);
 }
-.productPictures{
+
+.productPictures {
     width: 100%;
     cursor: pointer;
 }
 
-.productPictures:hover{
+.productPictures:hover {
     transform: scale(1.1);
     z-index: 10;
 }
 
-.productTitle{
-    font-size: small;
+.productTitle {
+    font-size: 0.9rem;
     font-weight: bold;
     margin-top: 0.5rem;
     color: #6A197D;
     cursor: pointer;
 }
-.productTitle:hover{
-    text-decoration: underline;
+
+.productTitle:hover {
+    color: #9b5cac;
 }
-.productPrice{
+
+.productPrice {
     font-weight: bold;
     color: #6A197D;
 }
-.addToCart{
+
+.addToCart {
     border-radius: 16px;
     font-size: 15px;
     font-weight: bold;
-    background-color:  rgba(194, 206, 255, 1);
+    background-color: rgba(194, 206, 255, 1);
     color: #6A197D;
     border: none;
     padding: 4px 8px;
     margin-bottom: 1rem;
 }
 
-.addToCart:hover{
+.addToCart:hover {
     background-color: #6A197D;;
-    color:  rgba(194, 206, 255, 1);
+    color: rgba(194, 206, 255, 1);
 }
+
 .addToCart:active {
     background-image: linear-gradient(#b0e2e2, #b0e2e2);
     color: #6A197D;
 }
-.add:active{
-    outline:none;
+
+.add:active {
+    outline: none;
 }
 
-.orderBtn{
+.orderBtn {
     background-image: linear-gradient(#a5cdba, #70d45b);
     color: #6A197D;
     margin-left: 10px;
 }
-.orderBtn:hover{
+
+.orderBtn:hover {
     background-image: linear-gradient(#4fff2f, #00780d);
     color: #b0e2e2;
 }
+
 .orderBtn:active {
     background-image: linear-gradient(#c0d3bc, #66ac74);
     color: #330c3a;
 }
-.row{
+
+.row {
     margin-left: 0px;
     margin-top: 0px;
     padding: 2px 10px;
     display: flex;
     justify-content: space-evenly;
 }
-.row h5{
+
+.row h5 {
     font-size: 1rem;
 }
-.cartWrapper{
+
+.cartWrapper {
     display: flex;
 }
-.check{
+
+.check {
     margin-top: 5px;
 }
-.check .row{
+
+.check .row {
     justify-content: space-between;
 }
-.row button{
+
+.row button {
     border-radius: 16px;
     font-size: 15px;
     font-weight: bold;
@@ -183,21 +202,26 @@ h1, h2 {
     margin: 0 5px;
     padding: 0px 14px;
 }
-.add{
+
+.add {
     border: green 1px solid;
 }
-.removeBtn{
+
+.removeBtn {
     border: #ff5a93 1px solid;
 }
-.homeTitle{
+
+.homeTitle {
+    font-family: 'Oleo Script', cursive;
     font-size: 6rem;
     font-weight: 700;
-    letter-spacing: 50px;
     text-align: center;
     margin-top: 5rem;
 }
-.shopTitle{
-    font-size: 4rem;
+
+.shopTitle {
+    font-family: 'Oleo Script', cursive;
+    font-size: 3rem;
     font-weight: 1000;
     text-align: center;
     color: #ca8cd9;
@@ -215,6 +239,7 @@ h1, h2 {
     transition: background-size 0.3s,
     background-position 0s 0.3s;
 }
+
 @keyframes underline {
     from {
         background-position: 0 100%;
@@ -225,7 +250,8 @@ h1, h2 {
         background-size: 100% 2px;;
     }
 }
-.shopDescription{
+
+.shopDescription {
     text-align: justify;
     margin-left: 5rem;
     margin-right: 5rem;
@@ -241,44 +267,56 @@ h1, h2 {
     width: 100%;
 }
 
-.toTheShopButton{
+.toTheShopButton {
     border-radius: 25px;
     font-size: 20px;
     font-weight: bold;
-    background-color:  rgba(194, 206, 255, 1);
+    background-color: rgba(194, 206, 255, 1);
     color: #6A197D;
     border: none;
     padding: 15px;
     margin-bottom: 1rem;
 }
-.toTheShopButton:hover{
+
+.toTheShopButton:hover {
     background-color: #6A197D;;
-    color:  rgba(194, 206, 255, 1);
+    color: rgba(194, 206, 255, 1);
     text-decoration: none;
 }
+
 .toTheShopButton:active {
     background-image: linear-gradient(#b0e2e2, #b0e2e2);
     color: #6A197D;
 }
-.buttonWrapper{
+
+.buttonWrapper {
     display: flex;
     justify-content: center;
 }
-.navbar-container{
+
+.navbar-container {
     display: flex;
     background: rgba(194, 206, 255, 0.7);
 }
-.navbar-item{
+
+.navbar-item {
     text-decoration: none;
     color: #6A197D;
     margin: 0.5rem;
 }
-.headerTitle{
-    color: #6A197D;
-    font-size:2em;
-    letter-spacing: 10px;
-}
-.headerTitle:hover{
+.navbar-item:hover{
+    color: #962aaf;
     text-decoration: none;
-    color: #6A197D;
+}
+
+.headerTitle {
+    font-family: 'Oleo Script', cursive;
+    color: #6a197d;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+.headerTitle:hover {
+    text-decoration: none;
+    color: #802097;
 }

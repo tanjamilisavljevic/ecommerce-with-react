@@ -14,7 +14,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footerTextAreaCenter">
-                    <h1 className="footerTextCenterTitle"> Tanja & Choka SHOP</h1>
+                    <h1 className="footerTextCenterTitle">BeCode's Famous Bookshop</h1>
                     <p className="footerText" id="address"> Koningin Astridlaan 185 </p>
                     <p className="footerText" id="address">  9000 Gent</p>
                 </div>

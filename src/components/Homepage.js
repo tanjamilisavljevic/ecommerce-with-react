@@ -26,8 +26,8 @@ function Homepage() {
                 </a>
             </div>
 
-            <h1 className="homeTitle"> Tanja&Choka</h1>
-            <p className="shopTitle"> SHOP</p>
+            <h1 className="homeTitle">BeCode's Famous</h1>
+            <p className="shopTitle"> BOOKSHOP</p>
 
             <div className="shopDescription">
                 Stories have a way of bringing people together.

@@ -54,8 +54,9 @@
 }
 
 .footerTextCenterTitle {
+    font-family: 'Oleo Script', cursive;
     font-weight: bolder;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     cursor: default;
 }
 
@@ -97,7 +98,8 @@ hr {
 }
 
 .dropdown-content:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #9b5cac;
 }
 
 p {
@@ -110,6 +112,7 @@ p {
 }
 
 .footerTitle {
+    font-size: 1.5rem;
     cursor: default;
 }
 
@@ -266,8 +269,8 @@ p {
         margin: 0;
     }
     .headerTitle{
-        font-size:1.2em;
-        letter-spacing: 5px;
+        font-size:1em;
+        letter-spacing: 1px;
     }
     .sectionLeft {
         width: 100%;

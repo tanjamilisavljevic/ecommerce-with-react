@@ -16,7 +16,7 @@ function Header(props) {
     return (
         <div>
             <header className="header">
-                <Link to="/" className="headerTitle">Tanja&Choka</Link>
+                <Link to="/" className="headerTitle">BeCode's Famous Bookshop</Link>
                 <div className="header-icons-wrap">
                     <div className="cartWrapper"> <img  onClick={toggleCart} className={"icons  icon-cart"} src="https://img.icons8.com/nolan/64/fast-cart.png"/><p className='count'></p></div>
                     <img className={"icons userIcon"} src="https://img.icons8.com/nolan/64/person-male.png"/>
