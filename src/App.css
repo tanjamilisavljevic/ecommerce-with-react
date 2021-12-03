@@ -286,7 +286,7 @@ h1, h2 {
 }
 
 .shopDescription {
-    text-align: justify;
+    text-align: center;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 5rem;
@@ -295,11 +295,6 @@ h1, h2 {
     color: #6A197D;
 }
 
-.shopDescription:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-}
 
 .toTheShopButton {
     border-radius: 25px;
